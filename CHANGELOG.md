@@ -10,9 +10,13 @@ You may also find the [Upgrade Guide](https://rust-random.github.io/book/update.
 
 ## [Unreleased]
 
+### Additions
+- Expose `ThreadRngCore` ([#1750])
+
 ### Changes
 - Document required output order of fn `partial_shuffle` and apply `#[must_use]` ([#1769])
 
+[#1750]: https://github.com/rust-random/rand/pull/1750
 [#1769]: https://github.com/rust-random/rand/pull/1769
 
 ## [0.10.1] — 2026-02-11
