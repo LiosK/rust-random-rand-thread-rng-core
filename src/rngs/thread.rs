@@ -76,9 +76,10 @@ impl ReseedingCore {
 
 /// The [`ThreadRng`] internal
 ///
-/// This type is the actual pseudo-random number generator that powers [`ThreadRng`]. The same
-/// Security design criteria and consideration as those of [`ThreadRng`] apply, whereas it allows
-/// users to utilize the same reseeding generator where `Send` or `Sync` is required.
+/// This type is the underlying, periodically seeded pseudorandom number generator that powers
+/// [`ThreadRng`]. The same Security design criteria and consideration as those of [`ThreadRng`]
+/// apply, whereas it allows users to utilize the same reseeding generator where `Send` or `Sync`
+/// is required.
 pub struct ThreadRngCore {
     inner: BlockRng<ReseedingCore>,
 }

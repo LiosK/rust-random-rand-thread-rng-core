@@ -8,6 +8,13 @@ A [separate changelog is kept for rand_core](https://github.com/rust-random/core
 
 You may also find the [Upgrade Guide](https://rust-random.github.io/book/update.html) useful.
 
+## [Unreleased]
+
+### Additions
+- Expose `ThreadRngCore` ([#1750])
+
+[#1750]: https://github.com/rust-random/rand/pull/1750
+
 ## [0.10.0] - 2026-02-08
 
 ### Changes
